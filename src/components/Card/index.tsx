@@ -2,7 +2,7 @@ import styles from './styles.module.css'
 
 export default function Card() {
   return (
-    <div className={ styles.cardOne }>
+    <div className={styles.cardOne}>
       <div className="flex-shrink-0">
         <img className="h-12 w-12" src="/vercel.svg" alt="Vercel Logo" />
       </div>

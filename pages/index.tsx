@@ -3,7 +3,8 @@ import Fetch from '@/helpers/fetch'
 import HomeScreen from '@/screens/Home'
 
 export default function Home(props) {
-  return <HomeScreen {...props } />
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  return <HomeScreen {...props} />
 }
 
 export const getStaticProps: GetStaticProps = async () => {

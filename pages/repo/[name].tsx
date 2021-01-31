@@ -6,6 +6,7 @@ import RepoScreen from '@/screens/Repo'
 export default function Repo(props) {
   const { isFallback } = useRouter()
   if (isFallback) return (<div>Loading...</div>)
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <RepoScreen {...props} />
 }
 

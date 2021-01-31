@@ -1,5 +1,5 @@
-const username = process.env.GITHUB_USERNAME;
-const token = process.env.GITHUB_TOKEN;
+const username = process.env.GITHUB_USERNAME
+const token = process.env.GITHUB_TOKEN
 
 export default async function Fetch(endpoint: string, params?: any[], customHeaders?: any[]) {
   const login = `${username}:${token}`

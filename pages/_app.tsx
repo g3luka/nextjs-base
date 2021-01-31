@@ -1,12 +1,13 @@
-// import App from "next/app";
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps } from 'next/app'
 import 'tailwindcss/tailwind.css'
 
 export function reportWebVitals(metric) {
+  // eslint-disable-next-line no-console
   console.table(metric);
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <Component {...pageProps} />
 }
 

@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from './styles.module.css'
 import Card from '@/components/Card'
+import styles from './styles.module.css'
 
 export default function Home({ repos }) {
   return (
-    <div className={ styles.container }>
+    <div className={styles.container}>
       <Head>
         <title>Home - Meus repositórios no GitHub</title>
         <link rel="icon" href="/favicon.ico" />
@@ -21,7 +21,7 @@ export default function Home({ repos }) {
 
         <Card />
 
-        { repos.map((repo) => (
+        {repos.map((repo) => (
           <div className={styles.grid} key={repo.node_id}>
             <Link href={`/repo/${repo.name}`}>
               <a className={styles.card}>
